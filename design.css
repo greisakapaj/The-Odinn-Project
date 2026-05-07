@@ -1,0 +1,160 @@
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      color: #222;
+    }
+
+  
+    .sidebar {
+      flex: 0 0 40%;
+      min-height: 100vh;
+      background-image: url('https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?q=80&w=1862&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      
+    }
+
+   
+    .logo {
+  position: absolute;
+  top: 44%;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1.5rem 0;
+  display: flex;               
+  align-items: center;          
+  justify-content: center;     
+  gap: 0.5rem;                    
+  color: white;
+  font-size: 3.5rem;
+  font-weight: bold;
+  letter-spacing: 0.4rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+.logo img {
+  height: 5rem;                 
+  width: auto;  
+
+}
+    
+    /* ===== RIGHT SIDE — content ===== */
+    .main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      background: #f9f9f9;
+    }
+
+    /* Intro text */
+    .intro {
+      padding: 6rem 3rem 2rem 3rem;
+      font-size: 1.4rem;
+      line-height: 1.5;
+      font-weight: 600;
+      max-width: 750px;
+    }
+
+    .intro em {
+      font-style: italic;
+    }
+
+    .intro p + p {
+      margin-top: 1.5rem;
+    }
+
+    /* Form panel */
+    .form-section {
+      background: white;
+      padding: 1.5rem 3rem 2.5rem 3rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+    }
+
+    .form-section h2 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1.25rem;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem 2.5rem;
+      max-width: 600px;
+    }
+
+    .field label {
+      display: block;
+      font-size: 0.7rem;
+      font-weight: bold;
+      letter-spacing: 0.12rem;
+      color: #555;
+      margin-bottom: 0.3rem;
+    }
+
+    .field input {
+      width: 100%;
+      padding: 0.5rem 0.6rem;
+      border: 1px solid #bbb;
+      border-radius: 4px;
+      
+      font-size: 1rem;
+      outline: none;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+
+    .field input:focus {
+      border-color: #2a52be;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+    }
+
+   
+    .cta {
+      padding: 2rem 3rem;
+    }
+
+    .cta button {
+      background: #596d48;
+      color: white;
+      border: none;
+      padding: 0.95rem 2.5rem;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 6px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      transition: background 0.30s;
+      text-align: center;
+    }
+
+    .cta button:hover {
+      background: #4a5c3c;
+    }
+
+    .cta p {
+      margin-top: 1rem;
+      font-size: 1rem;
+    }
+
+    .cta a {
+      color: #596d48;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .cta a:hover {
+      text-decoration: underline;
+    }
+ 
